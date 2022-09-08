@@ -1,0 +1,99 @@
+$text-content-color: #979793;
+
+.banner {
+    margin: 0 auto;
+    width: calc(100vw - 600px);
+    padding: 100px 0;
+    height: 100px;
+    color: white;
+    text-align: center;
+
+    &__text {
+        font-size: 76px;
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(120deg, #42d392 25%, #647eff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        line-height: 1.25;
+        letter-spacing: -1.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    &__description {
+        padding-top: 28px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $text-content-color;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        border: none;
+        background-color: #3a3a3a;
+        color: #aac8e4;
+        padding: 10px 20px;
+        font-size: large;
+        font-weight: 500;
+        margin: 0 10px;
+        margin-top: 50px;
+        border-radius: 8px;
+        transition: 100ms all;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #4f4f4f;
+        }
+
+        &:first-child {
+            background-color: #2ab576;
+
+            color: #213547;
+            padding: 10px 22px;
+
+            &:hover {
+                background-color: #42d392;
+            }
+        }
+    }
+    &__sponsor{
+        margin-top: 90px;
+        padding: 15px;
+        display: flex;
+        // justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        color: #979797;
+        filter: grayscale(1);
+        font-size: small;
+        position:relative;
+
+        &::before{
+            position: absolute;
+            top:0;
+            width: 100vw;
+            height: 2px;
+            content: '';
+            background: #212121;
+        }
+        &::after{
+            position: absolute;
+            bottom:0;
+            width: 100vw;
+            height: 2px;
+            content: '';
+            background: #212121;
+        }
+    }
+
+}
+
+
+.px-2{
+    padding: 0 5px
+}

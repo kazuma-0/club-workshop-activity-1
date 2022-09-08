@@ -1,0 +1,60 @@
+$navbar-border: #ffffff20;
+$icon-color: #cacaca;
+$icon-hover: #e1e1e1;
+.navigation{
+    height: 55px;
+    border-bottom: 1px solid $navbar-border;
+
+    &__inner{
+        margin: 0 auto;
+        width: calc(100% - 150px);
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:white;
+    }
+
+    &__brand{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: rgb(225, 225, 225)
+        
+    }
+
+    &__text{
+        padding: 10px;
+    }
+
+    &__links_wrap{
+        display: flex;
+        // justify-content: space-evenly;
+
+    }
+
+    &__links{
+        padding-right: 10px;
+    }
+    &__link{
+        text-decoration: none;
+        color: white;
+        font-size: small;
+        padding: 0 15px;
+        letter-spacing: .05ch;
+        font-weight: 500;
+    }
+    &__icons    {
+        display: flex;
+        justify-content: space-around;
+        width: 130px;
+    }
+    &__icon{
+        color:$icon-color;
+        transform: scale(1.1);
+        &:hover{
+            color:$icon-hover;
+            transition: 100ms color;
+        }
+    }
+}
